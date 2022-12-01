@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@500&family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* hero image */
+
+.hero-image{
+    background-image: linear-gradient(#020a20b4,#020a20b4),url(img/arka.jpg);
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.navbar-brand img{
+    width: 236px;
+}
+.nav-item{
+    margin-inline: 10px;
+    
+}
+.nav-item a{
+    color: white;
+    font-size: 14px;
+}
+.hero-text{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.liste li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 2px;
+    
+}
+.liste li a{
+    text-decoration: none;
+    color: #a1a1a1;
+}
+.secilen{
+    color: #990033;
+}
+.liste li a:hover{
+    color: #990033;
+}
+.cizgi{
+    width: 70%;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.card{
+    background: #020a20;
+    border: none;
+    text-align: center;
+    border-radius: 0;
+}
+.card img{
+    opacity: 0.8;
+    width: 100%;
+}
+.card .card-body{
+    background-color: white;
+}
+.card h5{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width){
+    .nav-item{
+        margin-inline: 4px;
+        font-size: 11px;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+}
+@media screen and (max-width:992px) {
+    .navbar-brand{
+        width: 232px;
+    }
+}
+@media screen and (max-width:768px){
+    .hero-text{
+        top: 50%;
+    }
+    .liste{
+        text-align: center;
+    }
+    .cizgi{
+        width: 100%;
+    }
+}
